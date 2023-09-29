@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Levi45Addons\n"
+"POT-Creation-Date: 2023-09-04 21:29+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugin.py:119
+msgid "unable to download updates"
+msgstr "Guncelleme yapilamdi"
+
+#: plugin.py:168
+msgid "Exit"
+msgstr "Cik"
+
+#: plugin.py:169
+msgid "Update"
+msgstr "Guncelle"
+
+#: plugin.py:170
+msgid "News"
+msgstr "Haber"
+
+#: plugin.py:171
+msgid "About"
+msgstr "Icerik"
+
+#: plugin.py:182 plugin.py:297
+msgid "Welcome , Please Wait.."
+msgstr "Hosgeldin , Lutfen bekle.."
+
+#: plugin.py:225 plugin.py:229 plugin.py:448 plugin.py:452
+#, python-format
+msgid "downloading-installing: %s"
+msgstr "Indiriliyor-yukleniyor %s"
+
+#: plugin.py:246 plugin.py:264
+msgid ""
+"Addons Download Failure\n"
+"No internet connection or server down !"
+msgstr 
+"Eklenti indirme hatasi\n"
+"Internete bagli degilsiniz yada sunucuda sorun var !"
+
+#: plugin.py:268
+msgid "Error processing server addons data"
+msgstr "Eklenti serverine baglanti kurulamiyor"
+
+#: plugin.py:318
+msgid "Do you install this plugin ?"
+msgstr "Bu eklentiyi yuklemek istiyormusunuz ?"
+
+#: plugin.py:407 plugin.py:417
+msgid "Unknow Image!"
+msgstr "Bilinmeyen Imaj!"
+
+#: plugin.py:440
+#, python-format
+msgid ""
+"Download failur %s!\n"
+"Error %s"
+msgstr 
+"Indirme hatasi alindi %s!\n"
+"Hata %s"
+
+#: plugin.py:473
+msgid "All file Downloaded in /tmp are removed!"
+msgstr "Gecici olarak cihaza indirilen butun dosyalar silindi!"

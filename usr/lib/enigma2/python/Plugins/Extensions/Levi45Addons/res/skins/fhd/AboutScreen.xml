@@ -1,0 +1,9 @@
+<!-- Skin 03/09/2023 -->
+<screen name="AboutScreen" position="center,center" size="1280,720" title="satellite-forum.com" backgroundColor="#10000000">
+    <widget name="text" position="28,132" size="882,520" font="Regular;28" foregroundColor="#ff6600" />
+    <eLabel name="" text="Exit" position="0,668" zPosition="5" size="345,45" valign="center" halign="center" font="Regular; 42" transparent="1" />
+    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/Addons_news.png" transparent="1" scale="stretch" alphatest="on" />
+    <widget backgroundColor="#101010" font="Regular; 38" foregroundColor="#60cefe" halign="right" position="1069,55" render="Label" size="200,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+</screen>

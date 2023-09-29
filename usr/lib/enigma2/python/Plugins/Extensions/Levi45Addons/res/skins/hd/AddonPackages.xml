@@ -1,0 +1,10 @@
+<!-- Skin 03/09/2023 -->
+<screen name="AddonPackages" position="center,center" size="1280,720" title="satellite-forum.com" backgroundColor="#10000000">
+    <widget name="countrymenu" position="38,137" size="790,425" itemHeight="35" scrollbarMode="showOnDemand" zPosition="5" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/sliderb.png" />
+    <widget name="info" position="25,589" zPosition="5" size="600,70" font="Regular; 22" foregroundColor="yellow" transparent="1" halign="center" valign="center" />
+    <widget name="fspace" position="627,589" zPosition="5" size="632,69" font="Regular; 20" foregroundColor="#ff6600" transparent="1" halign="left" valign="center" />
+    <ePixmap position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/AddonsGroups.png" transparent="1" scale="1" alphatest="on" />
+    <widget backgroundColor="#101010" font="Regular; 32" foregroundColor="#60cefe" halign="right" position="1064,60" render="Label" size="200,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+</screen>

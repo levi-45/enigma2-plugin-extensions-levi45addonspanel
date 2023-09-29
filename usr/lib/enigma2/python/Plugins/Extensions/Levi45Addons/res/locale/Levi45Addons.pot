@@ -1,0 +1,94 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Levi45Addons\n"
+"POT-Creation-Date: 2023-09-04 21:31+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Lululla-Levi45\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugin.py:119
+msgid "unable to download updates"
+msgstr "impossibile scaricare gli aggiornamenti"
+
+#: plugin.py:168
+msgid "Exit"
+msgstr "Uscire"
+
+#: plugin.py:169
+msgid "Update"
+msgstr "Aggiorna"
+
+#: plugin.py:170
+msgid "News"
+msgstr ""
+
+#: plugin.py:171
+msgid "About"
+msgstr ""
+
+#: plugin.py:182 plugin.py:297
+msgid "Welcome , Please Wait.."
+msgstr ""
+
+#: plugin.py:225 plugin.py:229 plugin.py:448 plugin.py:452
+#, python-format
+msgid "downloading-installing: %s"
+msgstr ""
+
+#: plugin.py:246 plugin.py:264
+msgid ""
+"Addons Download Failure\n"
+"No internet connection or server down !"
+msgstr ""
+"Errore nel download dei componenti aggiuntivi\n"
+"Nessuna connessione Internet o server inattivo!"
+
+#: plugin.py:268
+msgid "Error processing server addons data"
+msgstr "Errore durante l'elaborazione dei dati dei componenti aggiuntivi del server"
+
+#: plugin.py:318
+msgid "Do you install this plugin ?"
+msgstr "Installare questo plugin?"
+
+#: plugin.py:407 plugin.py:417
+msgid "Unknow Image!"
+msgstr "Immagine non adatta!"
+
+#: plugin.py:440
+#, python-format
+msgid ""
+"Download failur %s!\n"
+"Error %s"
+msgstr ""
+
+#: plugin.py:473
+msgid "All file Downloaded in /tmp are removed!"
+msgstr "Tutti i file scaricati in /tmp sono stati rimossi!"
+
+#~ msgid ""
+#~ "Addons Download Failure,\n"
+#~ "No internet connection or server down !"
+#~ msgstr ""
+#~ "Errore di download dei componenti aggiuntivi,\n"
+#~ "Nessuna connessione Internet o server inattivo!"
+
+#~ msgid "No New Available"
+#~ msgstr "Nessun Aggiornamento Disponibile"
+
+#~ msgid "Addons Download Failure, No internet connection or server down !"
+#~ msgstr "Errore nel download dei componenti aggiuntivi, nessuna connessione Internet o server inattivo!"
+
+#~ msgid "Do not install any skin unless you are sure it is compatible with your image.Are you sure ?"
+#~ msgstr "Non installare alcuna skin se non sei sicuro che sia compatibile con la tua immagine.Sei sicuro?"
+
+#~ msgid "All file Download are removed!"
+#~ msgstr "Tutti i file scaricati vengono rimossi!"

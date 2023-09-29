@@ -1,0 +1,14 @@
+<!-- Skin 03/09/2023 -->
+<screen name="AddonsGroups" position="center,center" size="1800,1055" title="satellite-forum.com" transparent="0" backgroundColor="#10000000">
+    <widget backgroundColor="#101010" font="Regular; 46" foregroundColor="#60cefe" halign="right" position="1517,8" render="Label" size="250,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+    <widget name="list" position="40,188" size="1136,670" itemHeight="55" scrollbarMode="showNever" zPosition="5" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/sliderb.png" />
+    <widget name="info" position="39,875" zPosition="4" size="867,90" font="Regular; 38" foregroundColor="yellow" transparent="1" halign="left" valign="center" />
+    <widget name="fspace" position="1185,769" zPosition="4" size="578,194" font="Regular; 38" foregroundColor="#ff6600" transparent="1" halign="center" valign="center" />
+    <ePixmap position="0,0" zPosition="-1" size="1800,1055" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/AddonsGroups.png" transparent="1" scale="stretch" alphatest="on" />
+    <widget name="key_red" position="20,990" zPosition="5" size="400,50" valign="center" halign="center" font="Regular; 38" transparent="1" foregroundColor="white" />
+    <widget name="key_green" position="475,990" zPosition="5" size="400,50" valign="center" halign="center" font="Regular; 38" transparent="1" foregroundColor="white" />
+    <widget name="key_yellow" position="930,990" zPosition="5" size="400,50" valign="center" halign="center" font="Regular; 38" transparent="1" foregroundColor="white" />
+    <widget name="key_blue" position="1373,990" zPosition="5" size="400,50" valign="center" halign="center" font="Regular; 38" transparent="1" foregroundColor="white" />
+</screen>
