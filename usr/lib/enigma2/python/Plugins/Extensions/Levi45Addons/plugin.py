@@ -57,7 +57,7 @@ except:
 
 
 # set
-currversion = '10.1_r17'
+currversion = '10.1_r18'
 name_plug = 'Levi45 Addon Manager'
 desc_plug = 'Satellite-Forum.com Addons Manager %s' % currversion
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('Levi45Addons'))

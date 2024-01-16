@@ -11,4 +11,7 @@
     <widget backgroundColor="#101010" font="Regular; 32" foregroundColor="#60cefe" halign="right" position="1064,60" render="Label" size="200,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
       <convert type="ClockToText">Format:%H:%M:%S</convert>
     </widget>
+        <widget backgroundColor="#101010" font="Regular; 32" foregroundColor="#60cefe" halign="right" position="64,60" render="Label" size="200,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
 </screen>

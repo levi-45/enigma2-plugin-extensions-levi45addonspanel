@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Levi45Addons\n"
+"POT-Creation-Date: 2023-09-04 21:29+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: 沙鸥 <lexlong2007@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugin.py:119
+msgid "unable to download updates"
+msgstr "无法下载更新"
+
+#: plugin.py:168
+msgid "Exit"
+msgstr "退出"
+
+#: plugin.py:169
+msgid "Update"
+msgstr "更新"
+
+#: plugin.py:170
+msgid "News"
+msgstr "新上"
+
+#: plugin.py:171
+msgid "About"
+msgstr "关于"
+
+#: plugin.py:182 plugin.py:297
+msgid "Welcome , Please Wait.."
+msgstr "欢迎,请稍等..."
+
+#: plugin.py:225 plugin.py:229 plugin.py:448 plugin.py:452
+#, python-format
+msgid "downloading-installing: %s"
+msgstr "下载-安装:%s"
+
+#: plugin.py:246 plugin.py:264
+msgid ""
+"Addons Download Failure\n"
+"No internet connection or server down !"
+msgstr ""
+"插件下载失败\n"
+"没有互联网连接或服务器关闭！"
+
+#: plugin.py:268
+msgid "Error processing server addons data"
+msgstr "处理服务器插件数据时出错"
+
+#: plugin.py:318
+msgid "Do you install this plugin ?"
+msgstr "你安装这个插件了吗？"
+
+#: plugin.py:407 plugin.py:417
+msgid "Unknow Image!"
+msgstr "未知固件!"
+
+#: plugin.py:440
+#, python-format
+msgid ""
+"Download failur %s!\n"
+"Error %s"
+msgstr ""
+"下载失败%s！\n"
+"错误%s"
+
+#: plugin.py:473
+msgid "All file Downloaded in /tmp are removed!"
+msgstr "/tmp 中下载的所有文件都将被删除!"
+
+msgid "Select"
+msgstr "选择"
+
+
+#~ msgid ""
+#~ "Addons Download Failure,\n"
+#~ "No internet connection or server down !"
+#~ msgstr ""
+#~ "Errore di download dei componenti aggiuntivi,\n"
+#~ "Nessuna connessione Internet o server inattivo!"
+
+#~ msgid "No New Available"
+#~ msgstr "Nessun Aggiornamento Disponibile"
+
+#~ msgid "Addons Download Failure, No internet connection or server down !"
+#~ msgstr "Errore nel download dei componenti aggiuntivi, nessuna connessione Internet o server inattivo!"
+
+#~ msgid "Do not install any skin unless you are sure it is compatible with your image.Are you sure ?"
+#~ msgstr "Non installare alcuna skin se non sei sicuro che sia compatibile con la tua immagine.Sei sicuro?"
+
+#~ msgid "All file Download are removed!"
+#~ msgstr "Tutti i file scaricati vengono rimossi!"
