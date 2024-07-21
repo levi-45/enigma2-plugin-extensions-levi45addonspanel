@@ -4,9 +4,9 @@
     <widget name="key_green" position="320,668" zPosition="5" size="345,45" valign="center" halign="center" font="Regular; 42" transparent="1" foregroundColor="white" />
     <widget name="key_yellow" position="599,668" zPosition="5" size="385,45" valign="center" halign="center" font="Regular; 42" transparent="1" foregroundColor="white" />
     <widget name="key_blue" position="939,667" zPosition="5" size="345,45" valign="center" halign="center" font="Regular; 42" transparent="1" foregroundColor="white" />
-    <widget name="list" position="37,129" size="790,420" itemHeight="40" scrollbarMode="showOnDemand" zPosition="5" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/sliderb.png" />
-    <widget name="info" position="4,581" zPosition="4" size="602,80" font="Regular; 28" foregroundColor="yellow" transparent="1" halign="center" valign="center" />
-    <widget name="fspace" position="611,580" zPosition="5" size="656,81" font="Regular; 28" foregroundColor="#ff6600" transparent="1" halign="center" valign="center" />
+    <widget name="list" position="37,129" size="790,405" font="Regular; 36" itemHeight="40" scrollbarMode="showOnDemand" zPosition="5" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/sliderb.png" />
+    <widget name="info" position="23,580" zPosition="5" size="796,80" font="Regular; 32" foregroundColor="#ffff00" transparent="1" halign="center" valign="center" />
+    <widget name="fspace" position="815,580" zPosition="5" size="452,81" font="Regular; 28" foregroundColor="#4da6ff" transparent="1" halign="center" valign="center" />
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/AddonsGroups.png" transparent="1" scale="stretch" alphatest="on" />
     <widget backgroundColor="#101010" font="Regular; 38" foregroundColor="#60cefe" halign="right" position="1020,55" render="Label" size="200,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
       <convert type="ClockToText">Format:%H:%M:%S</convert>
@@ -14,4 +14,5 @@
     <widget backgroundColor="#101010" font="Regular; 38" foregroundColor="#60cefe" halign="right" position="20,55" render="Label" size="200,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
        <convert type="ClockToText">Format:%A</convert>
      </widget> 
+    <eLabel backgroundColor="#00ffffff" position="15,570" size="1250,3" zPosition="12" />
 </screen>

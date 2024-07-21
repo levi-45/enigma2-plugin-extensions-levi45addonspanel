@@ -1,6 +1,6 @@
 <!-- Skin 03/09/2023 -->
 <screen name="AboutScreen" position="0,0" size="1280,720" title="satellite-forum.com" backgroundColor="#10000000">
-    <widget name="text" position="31,129" size="861,508" font="Regular;22" foregroundColor="#ff6600" />
+    <widget name="text" position="31,129" size="861,508" font="Regular;22" foregroundColor="#4da6ff" />
     <eLabel name="" text="Exit" position="42,678" zPosition="5" size="230,30" valign="center" halign="center" font="Regular; 24" transparent="1" foregroundColor="white" /> 
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/Addons_news.png" scale="stretch" transparent="1" alphatest="on" />
     <widget backgroundColor="#101010" font="Regular; 32" foregroundColor="#60cefe" halign="right" position="1064,60" render="Label" size="200,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">

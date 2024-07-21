@@ -16,7 +16,7 @@ msgstr ""
 
 #: plugin.py:119
 msgid "unable to download updates"
-msgstr "Guncelleme yapilamadi"
+msgstr "Guncelleme yapilamdi"
 
 #: plugin.py:168
 msgid "Exit"

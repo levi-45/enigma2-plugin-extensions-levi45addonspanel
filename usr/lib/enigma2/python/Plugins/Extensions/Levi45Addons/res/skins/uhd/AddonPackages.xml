@@ -2,7 +2,7 @@
 <screen name="AddonPackages" position="center,center" size="1800,1055" title="satellite-forum.com">
     <widget name="countrymenu" position="40,188" size="1136,670" itemHeight="55" scrollbarMode="showNever" zPosition="5" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/sliderb.png" />
     <widget name="info" position="39,875" zPosition="4" size="867,90" font="Regular; 38" foregroundColor="yellow" transparent="1" halign="left" valign="center" />
-    <widget name="fspace" position="1185,769" zPosition="4" size="578,194" font="Regular; 38" foregroundColor="#ff6600" transparent="1" halign="center" valign="center" />
+    <widget name="fspace" position="1185,769" zPosition="4" size="578,194" font="Regular; 38" foregroundColor="#4da6ff" transparent="1" halign="center" valign="center" />
     <ePixmap position="0,0" zPosition="-1" size="1800,1055" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons/res/images/AddonsGroups.png" scale="stretch" transparent="1" alphatest="on" />
     <widget backgroundColor="#101010" font="Regular; 46" foregroundColor="#60cefe" halign="right" position="1517,8" render="Label" size="250,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
       <convert type="ClockToText">Format:%H:%M:%S</convert>

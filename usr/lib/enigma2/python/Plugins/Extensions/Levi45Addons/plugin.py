@@ -4,40 +4,41 @@
 # --------------------#
 #   coded by Lululla  #
 #    Up Levi45        #
-#      02/09/2023     #
+#      01/07/2024     #
 #       No coppy      #
 # --------------------#
 # Info http://Satellite-Forum.com
 from __future__ import print_function
+# local import
 from . import Utils
 from . import _, wgetsts, getfreespace, MYIPK, MYDEB, adxipk, adxdeb
+# conponent enigma import
+# from Components.MultiContent import MultiContentEntryText
+# from Components.Sources.List import List
+# from enigma import eListboxPythonMultiContent
+# from enigma import gFont
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Label import Label
 from Components.MenuList import MenuList
-from Components.MultiContent import MultiContentEntryText
 from Components.ScrollLabel import ScrollLabel
-from Components.Sources.List import List
 from Plugins.Plugin import PluginDescriptor
 from Screens.Console import Console
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
+from Tools.Directories import SCOPE_PLUGINS
 from Tools.Directories import fileExists
 from Tools.Directories import resolveFilename
-from Tools.Directories import SCOPE_PLUGINS
-# from enigma import eListboxPythonMultiContent
 from enigma import eTimer
-# from enigma import gFont
 from enigma import getDesktop
 from twisted.web.client import getPage
 from xml.dom import minidom
+import codecs
 import os
 import sys
-import codecs
-_firstStartlevisaddon = True
-isDreamOS = False
-if os.path.exists("/var/lib/dpkg/status"):
-    isDreamOS = True
+
+
+
 PY3 = sys.version_info.major >= 3
 if PY3:
     from urllib.request import urlopen
@@ -57,13 +58,14 @@ except:
 
 
 # set
-currversion = '10.1_r18'
+currversion = '10.1_r19'
 name_plug = 'Levi45 Addon Manager'
 desc_plug = 'Satellite-Forum.com Addons Manager %s' % currversion
 plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/{}".format('Levi45Addons'))
 eeppkk = MYIPK.replace('+', '').replace('-', '')
 eeddeebb = MYDEB.replace('+', '').replace('-', '')
 iconx = 'plugin.png'
+
 screenwidth = getDesktop(0).size()
 if screenwidth.width() == 2560:
     skin_path = plugin_path + '/res/skins/uhd/'
@@ -71,55 +73,15 @@ elif screenwidth.width() == 1920:
     skin_path = plugin_path + '/res/skins/fhd/'
 else:
     skin_path = plugin_path + '/res/skins/hd/'
+
 AgentRequest = Utils.RequestAgent()
 epk = adxipk.replace('+', '').replace('-', '')
 edeb = adxdeb.replace('+', '').replace('-', '')
+_firstStartlevisaddon = True
+isDreamOS = False
 
-
-# class leviList(MenuList):
-    # def __init__(self, list):
-        # MenuList.__init__(self, list, True, eListboxPythonMultiContent)
-        # if screenwidth.width() == 2560:
-            # self.l.setItemHeight(60)
-            # textfont = int(44)
-            # self.l.setFont(0, gFont('Regular', textfont))
-        # elif screenwidth.width() == 1920:
-            # self.l.setItemHeight(50)
-            # textfont = int(32)
-            # self.l.setFont(0, gFont('Regular', textfont))
-        # else:
-            # self.l.setItemHeight(45)
-            # textfont = int(24)
-            # self.l.setFont(0, gFont('Regular', textfont))
-
-
-# def xxccnnEntry(name):
-    # # png0 = plugin_path + '/skin/uhd/xcselh.png'
-    # # pngl = plugin_path + '/skin/fhd/xcselh.png'
-    # # png2 = plugin_path + '/skin/hd/xcsel.png'
-    # res = [name]
-    # white = 16777215
-    # from enigma import RT_VALIGN_CENTER
-    # from enigma import RT_HALIGN_LEFT
-    # if screenwidth.width() == 2560:
-        # # res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 4), size=(86, 54), png=loadPNG(png0)))
-        # res.append(MultiContentEntryText(pos=(10, 0), size=(1800, 60), font=0, text=name, color=white, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
-    # elif screenwidth.width() == 1920:
-        # # res.append(MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(70, 40), png=loadPNG(pngl)))
-        # res.append(MultiContentEntryText(pos=(10, 0), size=(1000, 50), font=0, text=name, color=white, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
-    # else:
-        # # res.append(MultiContentEntryPixmapAlphaTest(pos=(3, 5), size=(50, 30), png=loadPNG(png2)))
-        # res.append(MultiContentEntryText(pos=(10, 0), size=(500, 50), font=0, text=name, color=white, flags=RT_HALIGN_LEFT | RT_VALIGN_CENTER))
-    # return res
-
-# def xxccnn(data, list):
-    # icount = 0
-    # mlist = []
-    # for line in data:
-        # name = data[icount]
-        # mlist.append(xxccnnEntry(name))
-        # icount = icount + 1
-    # list.setList(mlist)
+if os.path.exists("/var/lib/dpkg/status"):
+    isDreamOS = True
 
 
 class addonsupdatesScreen(Screen):
@@ -138,9 +100,10 @@ class addonsupdatesScreen(Screen):
                                                            'red': self.close,
                                                            'ok': self.ok,
                                                            'up': self.Up,
-                                                           'down': self.Down
+                                                           'down': self.Down,
+                                                           'left': self.Up,
+                                                           'right': self.Down,
                                                            }, -1)
-
         try:
             fp = urlopen('http://levi45.spdns.eu/Addons/AddonsPanel/News.txt')
             lines = fp.readlines()
@@ -213,7 +176,7 @@ class AboutScreen(Screen):
             img = os.popen('cat /etc/issue').read().strip('\n\r')
             arc = os.popen('uname -m').read().strip('\n\r')
             ifg = os.popen('wget -qO - ifconfig.me').read().strip('\n\r')
-            img = img.replace('\l', '')
+            img = img.replace('\\l', '')
             libs = os.popen('ls -l /usr/lib/libss*.*').read().strip('\n\r')
             if libs:
                 libsssl = libs
@@ -316,7 +279,7 @@ class AddonsGroups(Screen):
         getPage(url).addCallback(self._gotPageLoad).addErrback(self.errorLoad)
 
     def errorLoad(self, error):
-        print(str(error))
+        print('are here error:', str(error))
         self['info'].setText(_('Addons Download Failure\nNo internet connection or server down !'))
         # self.downloading = False
 
@@ -486,7 +449,6 @@ class AutoStartTimerManager:
 
     def __init__(self, session):
         self.session = session
-        global _firstStartlevisaddon
         print("*** running AutoStartTimerManager ***")
         if _firstStartlevisaddon:
             self.runUpdate()
@@ -494,6 +456,7 @@ class AutoStartTimerManager:
     def runUpdate(self):
         print("*** running update ***")
         try:
+            global _firstStartlevisaddon
             from . import Update
             Update.upd_done()
             _firstStartlevisaddon = False
@@ -534,9 +497,9 @@ def menu(menuid, **kwargs):
 def Plugins(**kwargs):
     list = []
     list.append(PluginDescriptor(name=_(name_plug), description=_(desc_plug), where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], needsRestart=True, fnc=autostart))
-    list.append(PluginDescriptor(icon=iconx, name=name_plug, description=desc_plug, where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main))
-    list.append(PluginDescriptor(icon=iconx, name=name_plug, description=desc_plug, where=PluginDescriptor.WHERE_MENU, fnc=menu))
-    list.append(PluginDescriptor(icon=iconx, name=name_plug, description=desc_plug, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=main))
+    list.append(PluginDescriptor(name=name_plug, description=desc_plug, where=PluginDescriptor.WHERE_PLUGINMENU, icon=iconx, fnc=main))
+    list.append(PluginDescriptor(name=name_plug, description=desc_plug, where=PluginDescriptor.WHERE_MENU, icon=iconx, fnc=menu))
+    # list.append(PluginDescriptor(name=name_plug, description=desc_plug, where=PluginDescriptor.WHERE_EXTENSIONSMENU, icon=iconx, fnc=main))
     return list
 
 # mod by Lululla

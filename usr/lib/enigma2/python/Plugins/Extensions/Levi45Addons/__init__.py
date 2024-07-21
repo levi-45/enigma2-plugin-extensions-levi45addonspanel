@@ -8,10 +8,10 @@ import os
 
 PluginLanguageDomain = 'Levi45Addons'
 PluginLanguagePath = 'Extensions/Levi45Addons/res/locale'
-MYIPK = 'aHR0cDov+L+2-xldmk0-NS5zc+GRucy5ldS-9BZ-GRvbnM+vTGV2aTQ+1QWRkb-25zdXBkYXRl'
-MYDEB = 'aHR0cDovL+2-xldmk0NS+5zcGR-ucy5ldS-9BZ-GRvbnNEZW+Iv-TGV2aTQ+1QWRkb25-z-UGFuZ-Wx1cGRhdGU='
-adxipk = 'aHR0cDovL+2-xldmk0NS5zcGR-ucy5ldS-9BZ-GRvbn+MvQW+Rkb25z-UGFuZWw+vYWRkb25zLnhtbA=='
-adxdeb = 'aHR0cDovL+2-xldmk0NS5zcGR-ucy5ldS-9BZ-GRvbn+MvQW+Rkb25z-UGFuZWxEZWIv-YWRkb2-5zZGViLnhtbA=='
+MYIPK = 'aHR0c+Dov+L2xldmk0-NS5zcGR+ucy5ldS9B-ZGRvbnMv+TGV2aTQ1Q-WRkb25zdXB+kYXRl'
+MYDEB = 'aHR0c+DovL2x+ldmk0NS+5zcGRu-cy5ldS9-BZGRvbnN+EZWIvTGV2-aTQ1Q-WRkb25zU+GFuZW-x1cGRhdGU='
+adxipk = 'aHR0c+DovL2xldmk-0NS5zcGRu-cy5ldS9B-ZGRv+bnMvQ+WRkb25zUG+F+uZWwvYW-Rkb25zLnhtbA=='
+adxdeb = 'aHR0c+DovL2xldmk+0NS5+zcGRucy-5ld-S9BZGRvb+nMvQWRk-+b25zUGFuZW+xEZ-WIvY-WRkb25-zZGViLnhtbA=='
 isDreamOS = False
 if os.path.exists("/var/lib/dpkg/status"):
     isDreamOS = True
