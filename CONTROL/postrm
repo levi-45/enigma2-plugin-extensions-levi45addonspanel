@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "Checking for an older version in the system..."
+if [ -d /usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons ]
+then 
+echo "Uninstall Levi45Addons"
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons > /dev/null 2>&1
+echo "Restart GUI to finish uninstall!"
+fi
+sleep 2
+exit 0

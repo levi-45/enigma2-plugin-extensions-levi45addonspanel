@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "Checking for an older version in the system..."
+if [ -d /usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons ]
+then 
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Levi45Addons > /dev/null 2>&1
+echo "Install Levi45AddonsManager... Please Wait..."
+fi
+sleep 2
+exit 0

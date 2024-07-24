@@ -1,0 +1,9 @@
+Package: enigma2-plugin-extensions-levi45-addon-manager
+Version: 10.1-r19
+Section: misc
+Priority: optional
+Architecture: all
+Maintainer: @levi45-@Lululla
+Description: Levi45 addon manager
+Source: http://satellite-forum.com
+Homepage: satellite-forum.com

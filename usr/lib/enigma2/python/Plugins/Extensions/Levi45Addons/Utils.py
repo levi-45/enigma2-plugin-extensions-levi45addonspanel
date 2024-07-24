@@ -1,8 +1,6 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# 30.03.2023
-# a common tips used from Lululla
-#
 import sys
 import datetime
 import os
